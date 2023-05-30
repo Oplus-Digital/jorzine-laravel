@@ -27,7 +27,7 @@ class BandResource extends JsonResource
             'genre' => $this->genre,
             'origin' => $this->origin,
             'active' => $this->active,
-            'bio' => strip_tags($this->bio),
+            'bio' => strip_tags(str_replace('&nbsp;', ' ', $this->bio)),
             'line_up' => $this->line_up,
             'embed_code' => $this->embed_code,
             'img' => $this->img,

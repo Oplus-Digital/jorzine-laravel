@@ -17,7 +17,7 @@ class ReleaseResource extends JsonResource
         return [
             'id' => $this->id,
             'title' => $this->title,
-            'body' => strip_tags($this->body),
+            'body' => strip_tags(str_replace('&nbsp;', ' ', $this->body)),
             'band' => $this->band,
             'label' => $this->label,
             'posted_by_user' => $this->posted_by_user,

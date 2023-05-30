@@ -17,7 +17,7 @@ class ArticleResource extends JsonResource
         return [
             'id' => $this->id,
             'title' => $this->title,
-            'body' => strip_tags($this->body),
+            'body' => strip_tags(str_replace('&nbsp;', ' ', $this->body)),
             'band' => $this->band,
             'profile' => $this->profile,
             'website' => $this->website,

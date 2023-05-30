@@ -17,7 +17,7 @@ class InterviewResource extends JsonResource
         return [
             'id' => $this->id,
             'title' => $this->title,
-            'body' => strip_tags($this->body),
+            'body' => strip_tags(str_replace('&nbsp;', ' ', $this->body)),
             'thumb' => $this->thumb,
             'stars' => $this->stars,
             'band' => $this->band,
