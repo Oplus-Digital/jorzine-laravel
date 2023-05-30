@@ -18,3 +18,6 @@ Route::resource('news',NewsController::class);
 Route::resource('releases',ReleaseController::class);
 Route::resource('reviews',ReviewController::class);
 
+Route::get('news_eastern',[NewsController::class,'news_eastern']);
+Route::get('news_international',[NewsController::class,'news_international']);
+

@@ -29,4 +29,18 @@ class NewsController extends Controller
                 'new' => new NewResource($new)
             ]);
     }
+
+    public function news_eastern()
+    {
+        return response()->json([
+            'news' => NewResource::collection(News::whereSectionName('Mid-Eastern Metal News')->get())
+        ]);
+    }
+
+    public function news_international()
+    {
+        return response()->json([
+            'news' => NewResource::collection(News::whereSectionName('International Metal News')->get())
+        ]);
+    }
 }
