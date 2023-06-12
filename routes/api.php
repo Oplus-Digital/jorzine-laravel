@@ -1,14 +1,12 @@
 <?php
 
-use App\Http\Controllers\ArticleController;
-use App\Http\Controllers\BandController;
-use App\Http\Controllers\InterviewController;
-use App\Http\Controllers\NewsController;
-use App\Http\Controllers\ReleaseController;
-use App\Http\Controllers\ReviewController;
-use Illuminate\Http\Request;
+use App\Http\Controllers\Api\ArticleController;
+use App\Http\Controllers\Api\BandController;
+use App\Http\Controllers\Api\InterviewController;
+use App\Http\Controllers\Api\NewsController;
+use App\Http\Controllers\Api\ReleaseController;
+use App\Http\Controllers\Api\ReviewController;
 use Illuminate\Support\Facades\Route;
-
 
 
 Route::resource('articles',ArticleController::class);
