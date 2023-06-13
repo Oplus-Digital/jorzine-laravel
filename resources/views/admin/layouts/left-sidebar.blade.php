@@ -12,7 +12,7 @@
                     <a href="{{route('admin.main')}}" class="waves-effect">
                         <i class="dripicons-home"></i>
 {{--                        <span class="badge rounded-pill bg-info float-end">3</span>--}}
-                        <span>Dashboard</span>
+                        <span>Main</span>
                     </a>
                 </li>
 
