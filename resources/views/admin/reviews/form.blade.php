@@ -61,7 +61,7 @@
                             <label for="profile" class="form-label"> Profile</label>
                             {!! Form::url('profile',null,[
                          'class' =>'form-control '.($errors->has('profile') ? ' is-invalid' : null),
-                         'placeholder'=> 'Profile Link' ,'required'
+                         'placeholder'=> 'Profile Link'
                          ]) !!}
                             @error('profile')
                             <div class="invalid-feedback" style="color: #ef1010">
@@ -78,7 +78,7 @@
                             <label for="website" class="form-label"> Website</label>
                             {!! Form::url('website',null,[
                          'class' =>'form-control '.($errors->has('website') ? ' is-invalid' : null),
-                         'placeholder'=> 'Website Link' ,'required'
+                         'placeholder'=> 'Website Link'
                          ]) !!}
                             @error('website')
                             <div class="invalid-feedback" style="color: #ef1010">
@@ -92,7 +92,7 @@
                             <label for="purchase_link" class="form-label"> Purchase Link</label>
                             {!! Form::url('purchase_link',null,[
                          'class' =>'form-control '.($errors->has('purchase_link') ? ' is-invalid' : null),
-                         'placeholder'=> 'Purchase Link' ,'required'
+                         'placeholder'=> 'Purchase Link'
                          ]) !!}
                             @error('purchase_link')
                             <div class="invalid-feedback" style="color: #ef1010">

@@ -24,8 +24,8 @@ class ArticleRequest extends FormRequest
         $rules = [
             'title' => ['string', 'required','max:255'],
             'body' => ['string', 'required'],
-            'profile' => ['string','required'],
-            'website' => ['string','required'],
+            'profile' => ['string','nullable'],
+            'website' => ['string','nullable'],
             'band' => ['string','required'],
             'author' => ['string','required'],
             'article_date' => ['date','required'],
@@ -37,8 +37,8 @@ class ArticleRequest extends FormRequest
             $rules = [
                 'title' => ['string', 'required','max:255'],
                 'body' => ['string', 'required'],
-                'profile' => ['string','required'],
-                'website' => ['string','required'],
+                'profile' => ['string','nullable'],
+                'website' => ['string','nullable'],
                 'band' => ['string','required'],
                 'author' => ['string','required'],
                 'article_date' => ['date','required'],

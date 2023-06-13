@@ -19,7 +19,6 @@ Route::group(['middleware' => ['auth'], 'as' => 'admin.'], function () {
         'articles' => ArticleController::class,
         'reviews' => ReviewController::class,
         'interviews' => InterviewController::class,
-
     ]);
 
 });

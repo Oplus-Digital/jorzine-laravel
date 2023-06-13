@@ -61,7 +61,7 @@
                             <label for="profile" class="form-label"> Profile</label>
                             {!! Form::url('profile',null,[
                          'class' =>'form-control '.($errors->has('profile') ? ' is-invalid' : null),
-                         'placeholder'=> 'Profile Link' ,'required'
+                         'placeholder'=> 'Profile Link'
                          ]) !!}
                             @error('profile')
                             <div class="invalid-feedback" style="color: #ef1010">

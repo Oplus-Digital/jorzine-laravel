@@ -24,7 +24,7 @@ class NewsRequest extends FormRequest
         $rules = [
             'title' => ['string', 'required','max:255'],
             'body' => ['string', 'required'],
-            'profile' => ['string','required'],
+            'profile' => ['string','nullable'],
             'section_name' => ['string','required'],
             'band' => ['string','required'],
             'news_date' => ['date','required'],
@@ -35,7 +35,7 @@ class NewsRequest extends FormRequest
             $rules = [
                 'title' => ['string', 'required','max:255'],
                 'body' => ['string', 'required'],
-                'profile' => ['string','required'],
+                'profile' => ['string','nullable'],
                 'section_name' => ['string','required'],
                 'band' => ['string','required'],
                 'news_date' => ['date','required'],
