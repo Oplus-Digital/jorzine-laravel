@@ -68,21 +68,29 @@
                         <tr>
                             <th scope="row">Image</th>
                             <td>
-                                <a data-fancybox="gallery" href="{{$review->img}} ">
-                                    <img src="{{$review->img}}"
-                                         alt="review_img" width="50" height="50"
-                                         class="img-fluid rounded">
-                                </a>
+                                @if($review->img)
+                                    <a data-fancybox="gallery" href="{{$review->img}} ">
+                                        <img src="{{$review->img}}"
+                                             alt="review_img" width="50" height="50"
+                                             class="img-fluid rounded">
+                                    </a>
+                                @else
+                                    Not Found
+                                @endif
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">Thumb</th>
                             <td>
-                                <a data-fancybox="gallery" href="{{$review->thumb}} ">
-                                    <img src="{{$review->thumb}}"
-                                         alt="article_thumb" width="50" height="50"
-                                         class="img-fluid rounded">
-                                </a>
+                                @if($review->thumb)
+                                    <a data-fancybox="gallery" href="{{$review->thumb}} ">
+                                        <img src="{{$review->thumb}}"
+                                             alt="article_thumb" width="50" height="50"
+                                             class="img-fluid rounded">
+                                    </a>
+                                @else
+                                    Not Found
+                                @endif
                             </td>
                         </tr>
                         <tr>

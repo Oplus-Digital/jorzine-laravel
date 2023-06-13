@@ -45,11 +45,15 @@
                         <tr>
                             <th scope="row">Thumb</th>
                             <td>
+                                @if($interview->thumb)
                                 <a data-fancybox="gallery" href="{{$interview->thumb}} ">
                                     <img src="{{$interview->thumb}}"
                                          alt="article_thumb" width="50" height="50"
                                          class="img-fluid rounded">
                                 </a>
+                                @else
+                                    Not Found
+                                @endif
                             </td>
                         </tr>
                         <tr>
